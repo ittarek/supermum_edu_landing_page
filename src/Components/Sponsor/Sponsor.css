@@ -1,0 +1,25 @@
+#sponsor {
+     margin: 50px 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.sponsor_details {
+     width: 251px;
+  line-height: 20px;
+}
+
+.sponsor_details h1{
+     font-family: Inter, sans-serif;
+     font-weight: 700;
+     font-size: 62px;
+     color: #101131;
+}
+.sponsor_details p{
+     font-family: Inter, sans-serif;
+     font-weight: 400;
+     font-size:20px;
+     color: #606176;
+ 
+}
