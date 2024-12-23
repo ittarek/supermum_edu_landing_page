@@ -1,5 +1,55 @@
-#banner{
+#banner {
      display: flex;
      justify-content: space-between;
      align-items: center;
+}
+
+.banner_details {
+     width: 521px;
+
+}
+
+.banner_details h1 {
+     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+     font-weight: 700;
+     font-size: 60px;
+     line-height: 72px;
+     color: #101130;
+}
+
+.banner_details .banner_text {
+     color: #606176;
+     font-size: 20px;
+     line-height: 32px;
+     font-family: Roboto, sans-serif;
+}
+
+.banner_details button {
+     background-color: #F77E53;
+     width: 200px;
+     height: 62px;
+     border-radius: 16px;
+     border: none;
+     font-family: Inter,
+          system-ui,
+          Avenir,
+          Helvetica,
+          Arial,
+          sans-serif;
+     font-weight: 600;
+     font-size: 18px;
+     letter-spacing: -1%;
+     line-height: 21.75px;
+     color: #FEF4F1;
+}
+
+.learn_more {
+     font-family: Roboto, sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     color: #606176;
+}
+.learn_more a{
+     text-decoration: underline;
+     color:#1ea568 ;
 }

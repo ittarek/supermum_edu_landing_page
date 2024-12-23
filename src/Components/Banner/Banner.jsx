@@ -7,12 +7,12 @@ const Banner = () => {
          {/* banner details */}
          <div className="banner_details">
            <h1>Discover best classes for the best learning</h1>
-           <p>
+           <p className="banner_text">
              We designed Connections Academy to give students all across the
              nation a tuition-free online public school that lets them learn.
            </p>
            <button type="button">Get Started</button>
-           <p>
+           <p className="learn_more">
              Not sure when to start? <Link to="#">Learn more</Link>
            </p>
          </div>
