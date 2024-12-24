@@ -1,6 +1,7 @@
-#sponsor {
+#sponsor_container {
      margin: 50px 0;
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
 }
@@ -22,4 +23,12 @@
      font-size:20px;
      color: #606176;
  
+}
+
+
+/* responsive for mobile device */
+@media (max-width: 768px) {
+     .sponsor_partner img {
+          width: 80px;
+     }
 }

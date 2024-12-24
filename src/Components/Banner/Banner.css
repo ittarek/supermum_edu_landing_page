@@ -1,5 +1,6 @@
-#banner {
+#banner_container {
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
 }
@@ -49,7 +50,8 @@
      font-size: 18px;
      color: #606176;
 }
-.learn_more a{
+
+.learn_more a {
      text-decoration: underline;
-     color:#1ea568 ;
+     color: #1ea568;
 }

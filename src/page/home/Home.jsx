@@ -1,4 +1,5 @@
 import Banner from "../../Components/Banner/Banner";
+import Platform from "../../Components/Platform/Platform";
 import Sponsor from "../../Components/Sponsor/Sponssor";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
 <div>
       <Banner />
       <Sponsor/>
+      <Platform/>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import bannerImg from "../../assets/images/logo_and_banner/bannerImg.png"
 import "./Banner.css"
 const Banner = () => {
      return (
-       <div id="banner">
+       <div id="banner_container">
          {/* banner details */}
          <div className="banner_details">
            <h1>Discover best classes for the best learning</h1>

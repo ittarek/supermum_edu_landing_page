@@ -1,0 +1,80 @@
+#platform_container {
+     margin: 50px 0;
+}
+
+.image_div {
+     position: relative;
+
+}
+
+.people_count {
+     text-align: center;
+     line-height: 10px;
+}
+
+.people_learning_component {
+     background: #ffffff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0px 25px 40px 0px #0000000D;
+     position: absolute;
+     margin-top: -100px;
+     left: 6%;
+     border-radius: 16px;
+     padding: 20px 20px;
+
+}
+.people_count h3{
+     font-size: 16px;
+     font-weight: 700;
+     font-family: Inter, sans-serif;
+}
+.people_count p{
+     color: #606176;
+     font-family: Inter, sans-serif;
+     font-weight: 400;
+     font-size: 13px;
+}
+.people_img {
+     position: relative;
+     display: flex;
+     align-items: center;
+
+
+}
+
+.image_stack {
+     position: relative;
+}
+
+.image_stack img {
+     width: 55px;
+     height: 55px;
+     object-fit: cover;
+     border-radius: 5px;
+ 
+}
+
+.show_more_button {
+     position: absolute;
+     margin-left: 155px;
+     background-color: #F77E53;
+     border: none;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     font-size: 20px;
+     color: white;
+     cursor: pointer;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.circle_image{
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     left: 85%;
+     top: 70%;
+}
