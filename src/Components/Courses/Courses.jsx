@@ -4,7 +4,7 @@ import "./Courses.css";
 import image1 from "../../assets/images/school_work_image/Image1.png";
 import image2 from "../../assets/images/school_work_image/Image2.png";
 import image3 from "../../assets/images/school_work_image/Image3.png";
-import { FaCartPlus, FaClock, FaUser } from "react-icons/fa";
+import { FaCartPlus, FaClock,  FaUsers } from "react-icons/fa";
 
 // courses data
 
@@ -55,7 +55,7 @@ const Courses = () => {
             <div className="card_bottom">
               <div className="course_count">
                 <span>
-                  <FaUser />
+                  <FaUsers />
                   <p>{data.total_student}</p>
                 </span>
                 <span>

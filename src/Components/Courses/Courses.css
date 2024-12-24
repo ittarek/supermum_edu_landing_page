@@ -1,5 +1,5 @@
 #courses_container {
-     margin: 120px 0 50px 0;
+     margin: 150px 0 50px 0;
 }
 
 .courses_heading {
@@ -105,4 +105,5 @@
 
 .card_bottom button svg {
      margin-right: 10px;
+     font-size: 16 px;
 }
