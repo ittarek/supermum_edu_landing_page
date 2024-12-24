@@ -1,7 +1,12 @@
 #platform_container {
      margin: 50px 0;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
 }
 
+/* left side component style */
 .image_div {
      position: relative;
 
@@ -21,22 +26,25 @@
      box-shadow: 0px 25px 40px 0px #0000000D;
      position: absolute;
      margin-top: -100px;
-     left: 6%;
+     left: 15%;
      border-radius: 16px;
      padding: 20px 20px;
 
 }
-.people_count h3{
+
+.people_count h3 {
      font-size: 16px;
      font-weight: 700;
      font-family: Inter, sans-serif;
 }
-.people_count p{
+
+.people_count p {
      color: #606176;
      font-family: Inter, sans-serif;
      font-weight: 400;
      font-size: 13px;
 }
+
 .people_img {
      position: relative;
      display: flex;
@@ -54,7 +62,7 @@
      height: 55px;
      object-fit: cover;
      border-radius: 5px;
- 
+
 }
 
 .show_more_button {
@@ -71,10 +79,71 @@
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.circle_image{
+.circle_image {
      position: absolute;
      bottom: 0;
      right: 0;
      left: 85%;
      top: 70%;
+}
+
+/* right side  component style */
+.right_side_component{
+     width: 600px;
+}
+.right_side_component h1{
+     font-family: Inter;
+          font-size: 44px;
+          font-weight: 700;
+          line-height: 56px;
+          letter-spacing: -0.01em;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+
+}
+.platform_card {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 30px;
+     align-items: center;
+
+}
+
+.platform_data {
+     width: 250px;
+     height: 220px;
+}
+
+.platform_data span {
+     background-color: #D2F1E1;
+     border-radius: 16px;
+     width: 70px;
+     height: 70px;
+     padding: 17px;
+
+}
+
+.platform_data span svg {
+     font-size: 22px;
+     text-align: center;
+
+}
+
+.platform_data h4 {
+     font-family: Inter;
+     font-size: 20px;
+     font-weight: 600;
+     line-height: 24.2px;
+     text-align: left;
+
+}
+
+.platform_data p {
+     font-family: Roboto;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 30px;
+     text-align: left;
+     color: #606176;
 }
