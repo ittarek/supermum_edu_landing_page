@@ -1,0 +1,51 @@
+#review_container{
+margin: 100px 0;
+}
+
+.review_heading{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+}
+.review_heading h1{
+     width: 400px;
+}
+.slide_button{
+     display: flex;
+     gap: 30px;
+}
+.slide_button button{
+     background: transparent;
+     border: none;
+     font-size: 22px;
+     
+}
+
+/* review items card */
+.review_items{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+
+}
+.review_card{
+     width: 450px;
+}
+.reviewer_card{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+}
+.reviewer_data{
+     line-height: 5px;
+}
+.reviewer_data p{
+     color: #333;
+     font-size: 14px;
+}
+.reviewer_data span svg{
+     color: #FFB800;
+     
+}
