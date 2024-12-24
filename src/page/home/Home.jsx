@@ -1,4 +1,5 @@
 import Banner from "../../Components/Banner/Banner";
+import Courses from "../../Components/Courses/Courses";
 import Platform from "../../Components/Platform/Platform";
 import Sponsor from "../../Components/Sponsor/Sponssor";
 
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <Sponsor/>
       <Platform/>
+      <Courses/>
     </div>
   );
 };

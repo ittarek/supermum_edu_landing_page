@@ -1,0 +1,108 @@
+#courses_container {
+     margin: 120px 0 50px 0;
+}
+
+.courses_heading {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.courses_heading h1 {
+     font-family: Inter;
+     font-size: 44px;
+     font-weight: 700;
+     line-height: 56px;
+     letter-spacing: -0.01em;
+     text-align: left;
+     text-underline-position: from-font;
+     text-decoration-skip-ink: none;
+     width: 450px;
+}
+
+.courses_heading button {
+     width: 150px;
+     background: transparent;
+     padding: 15px 0px;
+     border-radius: 16px;
+     border: 1px solid #2076FF;
+     color: #2076FF;
+     font-size: 14px;
+     font-weight: 400;
+     font-family: Inter, sans-serif;
+
+}
+
+.course_data {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;
+     padding: 10px;
+
+}
+
+.course_card {
+     width: 270px;
+     height: 390px;
+     box-shadow: 0px 20px 35px -5px #00000008;
+     border-radius: 12px;
+}
+
+.course_image {
+     margin: auto;
+}
+
+.course_image img {
+     object-fit: cover;
+}
+
+.course_count {
+     display: flex;
+     gap: 30px;
+     align-items: center;
+
+}
+
+.course_count span {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+
+
+}
+
+.course_count span p {
+     font-weight: 400;
+     color: #323232;
+}
+
+.course_count span svg {
+     color: coral;
+     font-size: 20px;
+}
+
+.card_bottom {
+     position: relative;
+}
+
+.card_bottom button {
+     width: 100%;
+     padding: 15px 0px;
+     border-radius: 16px;
+     border: 1px solid #2076FF;
+     color: #2076FF;
+     font-size: 14px;
+     font-weight: 400;
+     font-family: Inter, sans-serif;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     margin-bottom: -20%;
+     background: transparent;
+}
+
+.card_bottom button svg {
+     margin-right: 10px;
+}
