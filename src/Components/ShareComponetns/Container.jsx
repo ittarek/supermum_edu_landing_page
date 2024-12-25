@@ -3,7 +3,7 @@ import React from "react";
 const styles = {
   container: {
     maxWidth: "2520px",
-    margin: "50px auto",
+    margin: "25px auto",
     paddingLeft: "100px",
     paddingRight: "100px",
   },

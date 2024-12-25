@@ -54,13 +54,18 @@ const Pricing = () => {
               key={data.id}
               className={`price_card ${data.course_type.toLowerCase()}`}
             >
-              <h3
+              <h1
                 className={`course_type ${data.course_type.toLocaleLowerCase()}`}
               >
                 {data.course_type}
-              </h3>
-              <h2>${data.price}</h2>
-              <ul className={`course_details_li ${data.course_type.toLocaleLowerCase()}`}>
+              </h1>
+              <h2>
+                <sup>$</sup>
+                {data.price}
+              </h2>
+              <ul
+                className={`course_details_li ${data.course_type.toLocaleLowerCase()}`}
+              >
                 {data.course_details.map((detail, index) => (
                   <li key={index}>{detail}</li>
                 ))}

@@ -88,7 +88,7 @@ const Platform = () => {
 
            {/* right side component */}
            <div className="right_side_component">
-             <h1>How online public school works </h1>
+             <h1>How our online public school works </h1>
              <div className="platform_card">
                {platformCardData.slice(0, 4).map(data => (
                  <div key={data.id} className="platform_data">

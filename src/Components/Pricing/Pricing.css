@@ -6,20 +6,23 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
+margin-bottom: 20px;
 }
 
 .pricing_heading h1 {
-     width: 450px;
+     width: 600px;
+     font-weight: 700;
+     font-size: 44px;
 }
 
 .pricing_heading button {
      width: 150px;
      background: transparent;
-     padding: 15px 0px;
-     border-radius: 16px;
+     padding: 20px 0px;
+     border-radius: 12px;
      border: 1px solid #2076FF;
      color: #2076FF;
-     font-size: 14px;
+     font-size: 18px;
      font-weight: 400;
      font-family: Inter, sans-serif;
 }
@@ -33,6 +36,8 @@
 }
 
 .price_card {
+     width: 305px;
+     height: 550px;
      margin-top: 30px;
      text-align: center;
      padding: 0 15px;
@@ -40,12 +45,22 @@
      border-radius: 16px;
 
 }
-
+.price_card h2 {
+     padding-top: 50px;
+     font-size: 44px;
+     font-weight: 700;
+}
 .price_card ul li {
+     font-family: Inter, sans-serif;
      text-align: left;
-     line-height: 30px;
-     font-size: 14px;
+     line-height: 50px;
+     font-size: 20px;
      color: #333;
+     
+}
+.price_card ul{
+margin-bottom: 70px;
+
 }
 .course_details_li.regular li::marker {
 color:#2076FF;
@@ -92,24 +107,24 @@ color:#F77E53;
      margin-top: -10%;
      border-top-left-radius: 16px;
      border-top-right-radius: 16px;
-     padding: 10px 0;
+     padding: 30px 0;
+     font-size: 26px;
      
 
 }
 
-.price_card h2{
- padding-top: 25px;
-}
+
 .plan_button.regular,
 .plan_button.medium,
 .plan_button.premium {
      width: 90%;
-     padding: 10px 0px;
+     padding: 20px 0px;
      border-radius: 16px;
      font-size: 20px;
      font-weight: 600;
      font-family: Inter, sans-serif;
-     margin-bottom: 10px;
+     
+
 }
 
 .plan_button.regular {

@@ -51,10 +51,10 @@ const Courses = () => {
               <div className="course_image">
                 <img src={data.image} alt="" />
               </div>
-              <h2>{data.title}</h2>
+              <h3>{data.title}</h3>
 
               {/* card bottom */}
-              <div className="card_bottom">
+              <div className="card_bottom ">
                 <div className="course_count">
                   <span>
                     <FaUsers />
@@ -67,7 +67,8 @@ const Courses = () => {
 
                 <button type="button">
                   {" "}
-                  <FaCartPlus />  Add to Cart
+                  <FaCartPlus />
+                  Add to Cart
                 </button>
               </div>
             </div>

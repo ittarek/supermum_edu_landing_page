@@ -1,5 +1,5 @@
 #courses_container {
-     margin: 150px 0 50px 0;
+     margin: 100px 50px ;
 }
 
 .courses_heading {
@@ -23,12 +23,12 @@
 .courses_heading button {
      width: 150px;
      background: transparent;
-     padding: 15px 0px;
-     border-radius: 16px;
+     padding: 20px 0px;
+     border-radius: 14px;
      border: 1px solid #2076FF;
      color: #2076FF;
      font-size: 14px;
-     font-weight: 400;
+     font-weight: 600;
      font-family: Inter, sans-serif;
 
 }
@@ -39,7 +39,7 @@
      justify-content: space-between;
      align-items: center;
      gap: 20px;
-     padding: 10px;
+     
 
 }
 
@@ -48,19 +48,26 @@
      height: 390px;
      box-shadow: 0px 20px 35px -5px #00000008;
      border-radius: 12px;
-}
-
-.course_image {
-     margin: auto;
+     border-radius: 16px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 5px;
+     
 }
 
 .course_image img {
      object-fit: cover;
 }
-
+.course_card h3{
+     font-size: 20px;
+     text-align: left;
+     margin-left: 10px;
+}
 .course_count {
      display: flex;
-     gap: 30px;
+     justify-content: space-between;
+     gap: 40px;
      align-items: center;
 
 }
@@ -89,8 +96,8 @@
 
 .card_bottom button {
      width: 100%;
-     padding: 15px 0px;
-     border-radius: 16px;
+     padding: 10px 0px;
+     border-radius: 10px;
      border: 1px solid #2076FF;
      color: #2076FF;
      font-size: 14px;
@@ -99,10 +106,13 @@
      position: absolute;
      bottom: 0;
      left: 0;
-     margin-bottom: -20%;
+     margin-bottom: -30%;
      background: transparent;
 }
-
+.course_card:nth-of-type(2) .card_bottom button{
+     background: #2076FF;
+     color: #fff;
+}
 .card_bottom button svg {
      margin-right: 10px;
      font-size: 16 px;

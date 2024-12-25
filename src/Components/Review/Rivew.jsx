@@ -1,7 +1,6 @@
 import "./Review.css";
 import { FaArrowLeftLong, FaStar } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { CiStar } from "react-icons/ci";
 // image
 import image1 from "../../assets/images/testimonial_image/testimonial1.png";
 import image2 from "../../assets/images/testimonial_image/testimonial2.png";
@@ -33,7 +32,7 @@ const reviewData = [
 const Review = () => {
   return (
     <Container>
-      <div id="review_component">
+      <div id="review_container">
         {/* review heading  */}
         <div className="review_heading">
           <h1>Transform your life through education</h1>
