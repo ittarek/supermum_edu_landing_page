@@ -1,5 +1,5 @@
-import logo from "../../assets/images/logo_and_banner/Logo.png"
-import Container from "../ShareComponetns/Container";
+import logo from "../../../assets/images/logo_and_banner/Logo.png"
+import Container from "../../ShareComponetns/Container";
 import "./NavBar.css"
 const navItems =
      <>
