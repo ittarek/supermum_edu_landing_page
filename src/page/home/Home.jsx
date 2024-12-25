@@ -2,6 +2,7 @@ import Banner from "../../Components/Banner/Banner";
 import Courses from "../../Components/Courses/Courses";
 import Lecture from "../../Components/Lecture/Lecture";
 import Platform from "../../Components/Platform/Platform";
+import Pricing from "../../Components/Pricing/Pricing";
 import Review from "../../Components/Review/Rivew";
 import Sponsor from "../../Components/Sponsor/Sponssor";
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Courses/>
       <Lecture/>
       <Review/>
+      <Pricing/>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import { CiStar } from "react-icons/ci";
 // image
 import image1 from "../../assets/images/testimonial_image/testimonial1.png";
 import image2 from "../../assets/images/testimonial_image/testimonial2.png";
+import Container from "../ShareComponetns/Container";
 
 // data
 const reviewData = [
@@ -31,52 +32,54 @@ const reviewData = [
 ];
 const Review = () => {
   return (
-    <div id="review_component">
-      {/* review heading  */}
-      <div className="review_heading">
-        <h1>Transform your life through education</h1>
-        {/* slide button */}
-        <div className="slide_button">
-          <button type="button">
-            <FaArrowLeftLong />
-          </button>
-          <button type="button">
-            <FaArrowRightLong />
-          </button>
+    <Container>
+      <div id="review_component">
+        {/* review heading  */}
+        <div className="review_heading">
+          <h1>Transform your life through education</h1>
+          {/* slide button */}
+          <div className="slide_button">
+            <button type="button">
+              <FaArrowLeftLong />
+            </button>
+            <button type="button">
+              <FaArrowRightLong />
+            </button>
+          </div>
         </div>
-      </div>
 
-      {/* review items */}
-      <div className="review_items">
-        {reviewData.map(data => (
-          <div key={data.id} className="review_card">
-            <h2>&quot;{data.title}&quot;</h2>
-            <p>&quot;{data.details}&quot;</p>
+        {/* review items */}
+        <div className="review_items">
+          {reviewData.map(data => (
+            <div key={data.id} className="review_card">
+              <h2>&quot;{data.title}&quot;</h2>
+              <p>&quot;{data.details}&quot;</p>
 
-            {/* reviewer profile details*/}
-            <div className="reviewer_card">
-              {/* profile image
-               */}
-              <div className="reviewer_image">
-                <img src={data.reviewerImg} alt="" />
-              </div>
+              {/* reviewer profile details*/}
+              <div className="reviewer_card">
+                {/* profile image
+                 */}
+                <div className="reviewer_image">
+                  <img src={data.reviewerImg} alt="" />
+                </div>
 
-              <div className="reviewer_data">
-                <h2>{data.reviewerName}</h2>
-                <p>{data.reviewerLocation}</p>
-                <span>
-                  {Array(data.reviewCount)
-                    .fill()
-                    .map((_, index) => (
-                      <FaStar key={index} />
-                    ))}
-                </span>
+                <div className="reviewer_data">
+                  <h2>{data.reviewerName}</h2>
+                  <p>{data.reviewerLocation}</p>
+                  <span>
+                    {Array(data.reviewCount)
+                      .fill()
+                      .map((_, index) => (
+                        <FaStar key={index} />
+                      ))}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

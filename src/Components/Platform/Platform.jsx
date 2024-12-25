@@ -11,6 +11,7 @@ import { FaVideo } from "react-icons/fa";
 import { LuCalendarRange } from "react-icons/lu";
 import { IoMdBook } from "react-icons/io";
 import { TbSocial } from "react-icons/tb";
+import Container from "../ShareComponetns/Container"
 const peopleImage = [
      {id:1, img: people1},
      {id:2, img: people2},
@@ -51,57 +52,55 @@ const platformCardData = [
 ];
 const Platform = () => {
      return (
-       <div id="platform_container">
-         {/*left side component  */}
-         <div className="left_component">
-           {/* image div */}
-           <div className="image_div">
-             <img src={platformImg} alt="platform image" />
+       <Container>
+         <div id="platform_container">
+           {/*left side component  */}
+           <div className="left_component">
+             {/* image div */}
+             <div className="image_div">
+               <img src={platformImg} alt="platform image" />
 
-             {/* people learning */}
-             <div className="people_learning_component">
-               <div className="people_count">
-                 <h3>56, 5470+</h3> <p>people are learning </p>
-               </div>
-               {/* people image */}
-               <div className="people_img">
-                 {peopleImage.map((data, index) => (
-                   <div
-                     key={data.id}
-                     className="image_stack"
-                     style={{ left: `${index * -15}px` }}
-                   >
-                     <img src={data.img} alt="People are learning" />
+               {/* people learning */}
+               <div className="people_learning_component">
+                 <div className="people_count">
+                   <h3>56, 5470+</h3> <p>people are learning </p>
+                 </div>
+                 {/* people image */}
+                 <div className="people_img">
+                   {peopleImage.map((data, index) => (
+                     <div
+                       key={data.id}
+                       className="image_stack"
+                       style={{ left: `${index * -15}px` }}
+                     >
+                       <img src={data.img} alt="People are learning" />
+                     </div>
+                   ))}{" "}
+                   <button className="show_more_button">3+</button>
+                   {/* circle */}
+                   <div className="circle_image">
+                     <img src={circle} alt="circle image" />
                    </div>
-                 ))}{" "}
-                 <button className="show_more_button">3+</button>
-                 {/* circle */}
-                 <div className="circle_image">
-                   <img src={circle} alt="circle image" />
                  </div>
                </div>
              </div>
            </div>
-         </div>
 
-         {/* right side component */}
-         <div className="right_side_component">
-           <h1>How online public school works </h1>
-           <div className="platform_card">
-             {platformCardData.slice( 0, 4).map(data => (
-               <div key={data.id} className="platform_data">
-                    <span>
-                         {data.icon}
-                    </span>
-      <h4>{data.title}</h4>
-      <p>{data.details}</p>
-
-
-               </div>
-             ))}
+           {/* right side component */}
+           <div className="right_side_component">
+             <h1>How online public school works </h1>
+             <div className="platform_card">
+               {platformCardData.slice(0, 4).map(data => (
+                 <div key={data.id} className="platform_data">
+                   <span>{data.icon}</span>
+                   <h4>{data.title}</h4>
+                   <p>{data.details}</p>
+                 </div>
+               ))}
+             </div>
            </div>
          </div>
-       </div>
+       </Container>
      );
 };
 

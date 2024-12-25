@@ -1,0 +1,133 @@
+#pricing_container {
+     margin: 100px 0;
+}
+
+.pricing_heading {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.pricing_heading h1 {
+     width: 450px;
+}
+
+.pricing_heading button {
+     width: 150px;
+     background: transparent;
+     padding: 15px 0px;
+     border-radius: 16px;
+     border: 1px solid #2076FF;
+     color: #2076FF;
+     font-size: 14px;
+     font-weight: 400;
+     font-family: Inter, sans-serif;
+}
+
+.price_details_div {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+
+}
+
+.price_card {
+     margin-top: 30px;
+     text-align: center;
+     padding: 0 15px;
+     position: relative;
+     border-radius: 16px;
+
+}
+
+.price_card ul li {
+     text-align: left;
+     line-height: 30px;
+     font-size: 14px;
+     color: #333;
+}
+.course_details_li.regular li::marker {
+color:#2076FF;
+}
+.course_details_li.medium li::marker {
+color:#F6C07A;
+}
+.course_details_li.premium li::marker {
+color:#F77E53;
+}
+
+.price_card.regular {
+     background-color: #EDF3FF;
+}
+
+.price_card.medium {
+     background-color: #FEF0C3;
+}
+
+.price_card.premium {
+     background-color: #FEE6DC;
+}
+
+.course_type.regular {
+     background-color: #2076FF;
+
+}
+
+.course_type.medium {
+     background-color: #F6C07A;
+}
+
+.course_type.premium {
+     background-color: #F77E53;
+}
+
+.course_type.regular,
+.course_type.medium,
+.course_type.premium {
+     position: absolute;
+     width: 100%;
+     top: 0;
+     left: 0;
+     margin-top: -10%;
+     border-top-left-radius: 16px;
+     border-top-right-radius: 16px;
+     padding: 10px 0;
+     
+
+}
+
+.price_card h2{
+ padding-top: 25px;
+}
+.plan_button.regular,
+.plan_button.medium,
+.plan_button.premium {
+     width: 90%;
+     padding: 10px 0px;
+     border-radius: 16px;
+     font-size: 20px;
+     font-weight: 600;
+     font-family: Inter, sans-serif;
+     margin-bottom: 10px;
+}
+
+.plan_button.regular {
+     background: transparent;
+     border: 1px solid #2076FF;
+     color: #2076FF;
+
+}
+
+.plan_button.medium {
+     background: transparent;
+     border: 1px solid #F6C07A;
+     color: #F6C07A;
+}
+
+.plan_button.premium {
+     background: #F77E53;
+     border: 1px solid #F77E53;
+     color: #FFFFFF;
+
+}
