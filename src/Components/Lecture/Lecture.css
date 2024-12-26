@@ -141,7 +141,7 @@
      .main_video {
 
           width: 100%;
-
+          height: 350px;
      }
 
      .main_video img {
@@ -151,11 +151,22 @@
 
      /* lecture video */
      .lecture_video_div {
-          justify-content: space-between;
-          left: 0%;
+          flex-direction: column;
+          position: static;
+          width: 100%;
+          left: 0;
+          gap: 40px;
+          
      }
 
      .lecture_video {
-          width: 120px;
+          /* width: 120px; */
+          width: 100%;
+          height: 140px;
+     }
+
+     .lecture_video img {
+          width: 30%;
+          object-fit: cover;
      }
 }
