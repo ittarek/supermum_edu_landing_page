@@ -100,9 +100,14 @@
 
 @media screen and (max-width: 600px) {
      #footer_component {
-
+          margin: 0;
           flex-wrap: wrap;
 
+     }
+
+     .footer_summery , .footer_summery p{
+          width: 100%;
+        text-align: center;
      }
 
      .get_app {
