@@ -97,7 +97,11 @@
 
 }
 
-@media screen and (max-width: 600px) {
+
+
+/* responsive for tablet */
+@media (min-width: 640px) and (max-width: 1024px) {
+
      #lecture_container {
           flex-direction: column;
      }
@@ -117,10 +121,8 @@
      }
 }
 
-/* responsive for tablet */
-@media (min-width: 640px) and (max-width: 1024px) {
-
-#lecture_container {
+@media screen and (max-width: 600px) {
+     #lecture_container {
           flex-direction: column;
      }
 
@@ -132,9 +134,28 @@
      }
 
      /* right side */
+     .right_side_items {
+          width: 100%;
+     }
+
+     .main_video {
+
+          width: 100%;
+
+     }
+
      .main_video img {
           width: 100%;
-          top: 15%;
-          left: 10%;
+     }
+
+
+     /* lecture video */
+     .lecture_video_div {
+          justify-content: space-between;
+          left: 0%;
+     }
+
+     .lecture_video {
+          width: 120px;
      }
 }
