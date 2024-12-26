@@ -19,7 +19,9 @@ const Banner = () => {
              </p>
            </div>
            {/* banner image */}
-           <img src={bannerImg} alt="" />
+           <div className="banner_img">
+             <img src={bannerImg} alt="" />
+           </div>
          </div>
        </Container>
      );
