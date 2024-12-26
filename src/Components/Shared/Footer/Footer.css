@@ -99,14 +99,14 @@
 /* responsive for mobile device */
 
 @media screen and (max-width: 600px) {
-
      #footer_component {
-          flex-direction: column;
-          align-items: start;
+
+          flex-wrap: wrap;
 
      }
 
-     .footer_summery {
-          width: 100%;
+     .get_app {
+          margin-top: -5px;
      }
+
 }
