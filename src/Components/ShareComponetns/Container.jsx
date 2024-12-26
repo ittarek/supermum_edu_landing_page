@@ -1,34 +1,57 @@
-import React from "react";
+import  { useState, useEffect } from "react";
 
-const styles = {
-  container: {
-    maxWidth: "2520px",
-    margin: "25px auto",
-    paddingLeft: "100px",
-    paddingRight: "100px",
-  },
-  "@media (min-width: 640px)": {
-    container: {
-      paddingLeft: "8px",
-      paddingRight: "8px",
-    },
-  },
-  "@media (min-width: 768px)": {
-    container: {
+const getContainerStyles = width => {
+  if (width <= 639) {
+    // Styles for mobile devices
+    return {
+      maxWidth: "2520px",
+      margin: "25px auto",
+      paddingLeft: "0px",
+      paddingRight: "0px",
+      // backgroundColor: "#000",
+    };
+  } else if (width >= 640 && width < 768) {
+    // Styles for tablets
+    return {
+      maxWidth: "2520px",
+      margin: "25px auto",
       paddingLeft: "10px",
       paddingRight: "10px",
-    },
-  },
-  "@media (min-width: 1280px)": {
-    container: {
-      paddingLeft: "20px",
-      paddingRight: "20px",
-    },
-  },
+    };
+  } else if (width >= 768 && width < 1280) {
+    // Styles for small laptops
+    return {
+      maxWidth: "2520px",
+      margin: "25px auto",
+      paddingLeft: "10px",
+      paddingRight: "10px",
+    };
+  } else {
+    // Styles for desktops
+    return {
+      maxWidth: "2520px",
+      margin: "25px auto",
+      paddingLeft: "100px",
+      paddingRight: "100px",
+    };
+  }
 };
 
 const Container = ({ children }) => {
-  return <div style={styles.container}>{children}</div>;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const styles = getContainerStyles(windowWidth);
+
+  return <div style={styles}>{children}</div>;
 };
 
 export default Container;

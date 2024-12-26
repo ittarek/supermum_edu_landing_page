@@ -6,7 +6,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-margin-bottom: 20px;
+     margin-bottom: 20px;
 }
 
 .pricing_heading h1 {
@@ -45,31 +45,37 @@ margin-bottom: 20px;
      border-radius: 16px;
 
 }
+
 .price_card h2 {
      padding-top: 50px;
      font-size: 44px;
      font-weight: 700;
 }
+
 .price_card ul li {
      font-family: Inter, sans-serif;
      text-align: left;
      line-height: 50px;
      font-size: 20px;
      color: #333;
-     
-}
-.price_card ul{
-margin-bottom: 70px;
 
 }
+
+.price_card ul {
+     margin-bottom: 70px;
+
+}
+
 .course_details_li.regular li::marker {
-color:#2076FF;
+     color: #2076FF;
 }
+
 .course_details_li.medium li::marker {
-color:#F6C07A;
+     color: #F6C07A;
 }
+
 .course_details_li.premium li::marker {
-color:#F77E53;
+     color: #F77E53;
 }
 
 .price_card.regular {
@@ -109,7 +115,7 @@ color:#F77E53;
      border-top-right-radius: 16px;
      padding: 30px 0;
      font-size: 26px;
-     
+
 
 }
 
@@ -123,7 +129,7 @@ color:#F77E53;
      font-size: 20px;
      font-weight: 600;
      font-family: Inter, sans-serif;
-     
+
 
 }
 
@@ -145,4 +151,39 @@ color:#F77E53;
      border: 1px solid #F77E53;
      color: #FFFFFF;
 
+}
+
+
+/* responsive for mobile device */
+
+@media screen and (max-width: 600px) {
+     .pricing_heading {
+          flex-direction: column;
+          text-align: center;
+     }
+
+     .pricing_heading h1 {
+          width: 100%;
+          font-size: 34px;
+     }
+
+     .price_details_div {
+          gap: 50px;
+     }
+
+     .price_card {
+          width: 100%;
+          height: 550px;
+          margin-top: 30px;
+
+
+     }
+}
+
+/* responsive for tablet */
+@media (min-width: 640px) and (max-width: 1024px) {
+
+     .price_details_div {
+          gap: 50px;
+     }
 }

@@ -1,7 +1,6 @@
 #sponsor_container {
      margin: 100px 0px;
      display: flex;
-     flex-wrap: wrap;
      justify-content: space-between;
      align-items: center;
 }
@@ -25,14 +24,49 @@
      color: #606176;
 
 }
-.sponsor_partner img{
+
+.sponsor_partner img {
      width: 150px;
 
 }
 
 /* responsive for mobile device */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+     #sponsor_container {
+          flex-direction: column;
+          gap: 25px;
+     }
+
+     .sponsor_details {
+          width: 100%;
+          text-align: center;
+
+     }
+
+     .sponsor_details h1 {
+          font-size: 52px;
+     }
+
      .sponsor_partner img {
-          width: 80px;
+          width: 100%;
+     }
+}
+
+/* responsive for tablet */
+@media (min-width: 640px) and (max-width: 1024px) {
+
+     .sponsor_partner img {
+          width: 100px;
+
+     }
+
+     .sponsor_details {
+          width: 150px;
+
+     }
+
+     .sponsor_details h1 {
+          font-size: 42px;
+
      }
 }

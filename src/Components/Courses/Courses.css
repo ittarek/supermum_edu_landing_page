@@ -1,5 +1,5 @@
 #courses_container {
-     margin: 100px 50px ;
+     margin: 100px 50px;
 }
 
 .courses_heading {
@@ -39,8 +39,6 @@
      justify-content: space-between;
      align-items: center;
      gap: 20px;
-     
-
 }
 
 .course_card {
@@ -53,17 +51,19 @@
      flex-direction: column;
      align-items: center;
      padding-top: 5px;
-     
+
 }
 
 .course_image img {
      object-fit: cover;
 }
-.course_card h3{
+
+.course_card h3 {
      font-size: 20px;
      text-align: left;
      margin-left: 10px;
 }
+
 .course_count {
      display: flex;
      justify-content: space-between;
@@ -109,11 +109,40 @@
      margin-bottom: -30%;
      background: transparent;
 }
-.course_card:nth-of-type(2) .card_bottom button{
+
+.course_card:nth-of-type(2) .card_bottom button {
      background: #2076FF;
      color: #fff;
 }
+
 .card_bottom button svg {
      margin-right: 10px;
      font-size: 16 px;
+}
+
+@media screen and (max-width:600px) {
+     #courses_container {
+          margin: 10px 0px;
+     }
+
+     .courses_heading {
+          flex-direction: column;
+          text-align: center;
+          margin-bottom: 20px;
+     }
+
+     .courses_heading h1 {
+          font-size: 34px;
+          text-align: center;
+          width: 100%;
+     }
+
+     .course_data {
+          gap: 50px;
+     }
+
+     .course_card {
+          margin: auto;
+          width: 270px;
+     }
 }

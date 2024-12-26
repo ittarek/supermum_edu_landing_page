@@ -1,10 +1,8 @@
 #platform_container {
-     /* margin: 50px 50px; */
      display: flex;
-     flex-wrap: wrap;
      justify-content: space-around;
      align-items: center;
-     
+
 }
 
 /* left side component style */
@@ -146,4 +144,63 @@
      line-height: 30px;
      text-align: left;
      color: #606176;
+}
+
+
+@media screen and (max-width: 600px) {
+     #platform_container {
+          flex-direction: column;
+     }
+
+     /* left side */
+     .image_div img {
+          width: 100%;
+     }
+
+     /* right side  component style */
+
+     .platform_card {
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+     }
+
+     .right_side_component h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 44px;
+          margin-top: 100px;
+     }
+
+     .platform_data {
+          width: 100%;
+     }
+
+     .platform_data span svg {
+          font-size: 22px;
+          text-align: center;
+
+     }
+}
+
+/* responsive for tablet */
+@media (min-width: 640px) and (max-width: 1024px) {
+
+     #platform_container {
+          flex-wrap: wrap;
+
+     }
+
+     .left_component {
+          margin: 0px 0px 100px  0;
+
+     }
+
+     .image_div {
+          width: 100%;
+
+     }
 }
