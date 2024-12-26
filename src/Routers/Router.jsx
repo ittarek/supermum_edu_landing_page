@@ -3,7 +3,7 @@ import ErrorPage from "../Components/ErrorElemnt/ErrorPage";
 import Home from "../page/home/Home";
 import Layout from "../layout/Layout";
 
-export const Router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     errorElement: <ErrorPage />,
     path: "/",

@@ -18,7 +18,7 @@ const videoData = [
     title: "Lecture 3",
   },
   {
-    id: 1,
+    id: 3,
     video: video3,
     title: "Lecture 4",
   },
