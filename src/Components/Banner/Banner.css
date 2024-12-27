@@ -52,7 +52,7 @@
 
 .learn_more a {
      text-decoration: underline;
-     color: #1ea568;
+     color: #2076FF;
 }
 
 /* responsive for mobile device */
@@ -111,4 +111,27 @@
      #banner_container img {
           width: 100%;
      }
+}
+
+/* responsive for laptop devices */
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+#banner_container {
+          flex-wrap: nowrap;
+     }
+
+     .banner_details {
+          width: 450px;
+          text-align: left
+          ;
+     }
+.banner_details h1{
+     font-size: 44px;
+}
+     .banner_details .banner_text {
+          font-size: 20px;
+          text-align: left;
+     }
+
+
 }

@@ -156,7 +156,7 @@
           width: 100%;
           left: 0;
           gap: 40px;
-          
+
      }
 
      .lecture_video {
@@ -169,4 +169,24 @@
           width: 30%;
           object-fit: cover;
      }
+}
+
+/* responsive for laptop devices */
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+     #lecture_container {
+          flex-direction: row;
+     }
+
+     /* left side */
+     .left_side_items {
+          width: 350px;
+          text-align: left;
+
+     }
+           .main_video img {
+                width: 530px;
+                top: 15%;
+                left: -10%;
+           }
 }

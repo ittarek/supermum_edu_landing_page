@@ -105,9 +105,10 @@
 
      }
 
-     .footer_summery , .footer_summery p{
+     .footer_summery,
+     .footer_summery p {
           width: 100%;
-        text-align: center;
+          text-align: center;
      }
 
      .get_app {
