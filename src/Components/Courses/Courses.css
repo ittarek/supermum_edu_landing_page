@@ -120,7 +120,7 @@
 }
 
 /* responsive for best practice */
-@media screen and (max-width:600px) {
+@media screen and (max-width:640px) {
      #courses_container {
           margin: 10px 0px;
      }
@@ -145,4 +145,13 @@
           margin: auto;
           width: 270px;
      }
+}
+
+/* responsive for tablet */
+@media (min-width: 640px) and (max-width: 1024px) {
+
+     .course_card {
+               margin: auto;
+               width: 270px;
+          }
 }

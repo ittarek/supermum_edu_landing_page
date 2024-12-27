@@ -1,14 +1,14 @@
 import  { useState, useEffect } from "react";
 
 const getContainerStyles = width => {
-  if (width <= 639) {
+  if (width <= 640) {
     // Styles for mobile devices
     return {
       maxWidth: "2520px",
       margin: "25px auto",
       paddingLeft: "0px",
       paddingRight: "0px",
-      // backgroundColor: "#000",
+    
     };
   } else if (width >= 640 && width < 768) {
     // Styles for tablets

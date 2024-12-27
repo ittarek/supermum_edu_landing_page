@@ -149,7 +149,7 @@
 }
 
 /* responsive for mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
      #platform_container {
           flex-direction: column;
      }

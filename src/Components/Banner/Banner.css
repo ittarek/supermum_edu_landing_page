@@ -97,7 +97,7 @@
 }
 
 /* Responsive for tablet */
-@media (min-width: 640px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
      #banner_container {
           flex-wrap: wrap;
      }
