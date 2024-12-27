@@ -132,4 +132,9 @@
      .banner_details h1 {
           font-size: 44px;
      }
+     .banner_img {
+
+     margin-right: -10px;
+}
+
 }
