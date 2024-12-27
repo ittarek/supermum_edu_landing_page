@@ -23,6 +23,7 @@
      background: transparent;
      border: none;
      font-size: 20px;
+     cursor: pointer;
 
 
 }
@@ -60,6 +61,7 @@
 
 }
 
+/* responsive for mobile */
 @media screen and (max-width:600px) {
      .review_heading {
           display: flex;
@@ -74,6 +76,9 @@
           text-align: left;
      }
 
+     .review_items {
+          gap: 30px;
+     }
 }
 
 /* responsive for tablet */

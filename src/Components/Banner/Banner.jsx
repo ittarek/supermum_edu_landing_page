@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import bannerImg from "../../assets/images/logo_and_banner/bannerImg.png"
 import "./Banner.css"
-import Container from "../ShareComponetns/Container";
+import Container from "../ShareComponents/Container";
 const Banner = () => {
      return (
        <Container>
-         <div id="banner_container">
+         <section id="banner_container">
            {/* banner details */}
            <div className="banner_details">
              <h1>Discover best classes for the best learning</h1>
@@ -20,9 +20,9 @@ const Banner = () => {
            </div>
            {/* banner image */}
            <div className="banner_img">
-             <img src={bannerImg} alt="" />
+             <img src={bannerImg} alt="banner image" loading="lazy" />
            </div>
-         </div>
+         </section>
        </Container>
      );
 };

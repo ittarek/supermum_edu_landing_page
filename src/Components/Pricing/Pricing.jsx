@@ -1,5 +1,5 @@
 import "./Pricing.css";
-import Container from "./../ShareComponetns/Container";
+import Container from "./../ShareComponents/Container";
 
 // data
 const priceData = [
@@ -40,7 +40,7 @@ const priceData = [
 const Pricing = () => {
   return (
     <Container>
-      <div id="pricing_container">
+      <section id="pricing_container">
         {/* component heading  */}
         <div className="pricing_heading">
           <h1>Transform your life through education</h1>
@@ -49,37 +49,32 @@ const Pricing = () => {
 
         {/* pricing details */}
         <div className="price_details_div">
-          {priceData.map(data => (
-            <div
-              key={data.id}
-              className={`price_card ${data.course_type.toLowerCase()}`}
-            >
-              <h1
-                className={`course_type ${data.course_type.toLocaleLowerCase()}`}
-              >
-                {data.course_type}
+          {priceData.map(({ id, course_type, price, course_details }) => (
+            <div key={id} className={`price_card ${course_type.toLowerCase()}`}>
+              <h1 className={`course_type ${course_type.toLocaleLowerCase()}`}>
+                {course_type}
               </h1>
               <h2>
                 <sup>$</sup>
-                {data.price}
+                {price}
               </h2>
               <ul
-                className={`course_details_li ${data.course_type.toLocaleLowerCase()}`}
+                className={`course_details_li ${course_type.toLocaleLowerCase()}`}
               >
-                {data.course_details.map((detail, index) => (
+                {course_details.map((detail, index) => (
                   <li key={index}>{detail}</li>
                 ))}
               </ul>
               <button
                 type="button"
-                className={`plan_button ${data.course_type.toLocaleLowerCase()}`}
+                className={`plan_button ${course_type.toLocaleLowerCase()}`}
               >
                 Buy Plan
               </button>
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </Container>
   );
 };

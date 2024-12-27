@@ -52,8 +52,10 @@
 
 }
 
+
 .image_stack {
      position: relative;
+     left: calc(var(--index) * -15px);
 }
 
 .image_stack img {
@@ -146,7 +148,7 @@
      color: #606176;
 }
 
-
+/* responsive for mobile */
 @media screen and (max-width: 600px) {
      #platform_container {
           flex-direction: column;
@@ -160,7 +162,6 @@
      /* right side  component style */
 
      .platform_card {
-
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -191,11 +192,12 @@
 
      #platform_container {
           flex-wrap: wrap;
-
+justify-content: center;
+align-items: center;
      }
 
      .left_component {
-          margin: 0px 0px 100px  0;
+          margin: 0px 0px 100px 0;
 
      }
 

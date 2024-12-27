@@ -1,9 +1,11 @@
 import "./Sponsor.css";
+// image
 import sponsor1 from "../../assets/images/sponsor_image/sponsor1.png";
 import sponsor2 from "../../assets/images/sponsor_image/sponsor2.png";
 import sponsor3 from "../../assets/images/sponsor_image/sponsor3.png";
 import sponsor4 from "../../assets/images/sponsor_image/sponsor4.png";
-import Container from "../ShareComponetns/Container";
+import fallback_image from "../../assets/fallback_image/fallback_image.jpg"
+import Container from "../ShareComponents/Container";
 
 const sponsorItems = [
   { id: 1, img: sponsor1 },
@@ -23,7 +25,12 @@ const Sponsor = () => {
 
         {sponsorItems.map(data => (
           <div key={data.id} className="sponsor_partner">
-            <img src={data.img} alt={`sponsor logo ${data.id}`} />
+            <img
+              src={data.img}
+              alt={`sponsor logo ${data.id}`}
+              loading="lazy"
+              onError={e => (e.target.src = { fallback_image})}
+            />
           </div>
         ))}
       </div>

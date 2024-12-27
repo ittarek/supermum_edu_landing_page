@@ -11,7 +11,7 @@ import { FaVideo } from "react-icons/fa";
 import { LuCalendarRange } from "react-icons/lu";
 import { IoMdBook } from "react-icons/io";
 import { TbSocial } from "react-icons/tb";
-import Container from "../ShareComponetns/Container"
+import Container from "../ShareComponents/Container"
 const peopleImage = [
      {id:1, img: people1},
      {id:2, img: people2},
@@ -71,15 +71,21 @@ const Platform = () => {
                      <div
                        key={data.id}
                        className="image_stack"
-                       style={{ left: `${index * -15}px` }}
+                       style={{ "--index": index }}
                      >
-                       <img src={data.img} alt="People are learning" />
+             
+                       <img
+                         src={data.img}
+                         alt="People are 
+                       learning"
+                         loading="lazy"
+                       />
                      </div>
                    ))}{" "}
                    <button className="show_more_button">3+</button>
                    {/* circle */}
                    <div className="circle_image">
-                     <img src={circle} alt="circle image" />
+                     <img src={circle} alt="circle image"  loading="lazy"/>
                    </div>
                  </div>
                </div>
@@ -90,7 +96,7 @@ const Platform = () => {
            <div className="right_side_component">
              <h1>How our online public school works </h1>
              <div className="platform_card">
-               {platformCardData.slice(0, 4).map(data => (
+               {platformCardData.map(data => (
                  <div key={data.id} className="platform_data">
                    <span>{data.icon}</span>
                    <h4>{data.title}</h4>

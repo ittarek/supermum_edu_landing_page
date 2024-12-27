@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 // image
 import image1 from "../../assets/images/testimonial_image/testimonial1.png";
 import image2 from "../../assets/images/testimonial_image/testimonial2.png";
-import Container from "../ShareComponetns/Container";
+import Container from "../ShareComponents/Container";
 
 // data
 const reviewData = [
@@ -32,7 +32,7 @@ const reviewData = [
 const Review = () => {
   return (
     <Container>
-      <div id="review_container">
+      <section id="review_container">
         {/* review heading  */}
         <div className="review_heading">
           <h1>Transform your life through education</h1>
@@ -49,35 +49,45 @@ const Review = () => {
 
         {/* review items */}
         <div className="review_items">
-          {reviewData.map(data => (
-            <div key={data.id} className="review_card">
-              <h2>&quot;{data.title}&quot;</h2>
-              <p>&quot;{data.details}&quot;</p>
+          {reviewData.map(
+            ({
+              id,
+              title,
+              details,
+              reviewerImg,
+              reviewCount,
+              reviewerName,
+              reviewerLocation,
+            }) => (
+              <div key={id} className="review_card">
+                <h2>&quot;{title}&quot;</h2>
+                <p>&quot;{details}&quot;</p>
 
-              {/* reviewer profile details*/}
-              <div className="reviewer_card">
-                {/* profile image
-                 */}
-                <div className="reviewer_image">
-                  <img src={data.reviewerImg} alt="" />
-                </div>
+                {/* reviewer profile details*/}
+                <div className="reviewer_card">
+                  {/* profile image
+                   */}
+                  <div className="reviewer_image">
+                    <img src={reviewerImg} alt="reviewer_image" loading="lazy"/>
+                  </div>
 
-                <div className="reviewer_data">
-                  <h2>{data.reviewerName}</h2>
-                  <p>{data.reviewerLocation}</p>
-                  <span>
-                    {Array(data.reviewCount)
-                      .fill()
-                      .map((_, index) => (
-                        <FaStar key={index} />
-                      ))}
-                  </span>
+                  <div className="reviewer_data">
+                    <h2>{reviewerName}</h2>
+                    <p>{reviewerLocation}</p>
+                    <span>
+                      {Array(reviewCount)
+                        .fill()
+                        .map((_, index) => (
+                          <FaStar key={index} />
+                        ))}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
-      </div>
+      </section>
     </Container>
   );
 };

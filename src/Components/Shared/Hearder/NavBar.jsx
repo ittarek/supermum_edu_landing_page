@@ -1,16 +1,28 @@
 import { useState } from "react";
 import logo from "../../../assets/images/logo_and_banner/Logo.png"
-import Container from "../../ShareComponetns/Container";
+import Container from "../../ShareComponents/Container";
 import "./NavBar.css"
 import { Twirl as Hamburger } from "hamburger-react";
 import { slide as Menu } from "react-burger-menu";
-const navItems =
-     <>
-     <li>Home</li>
-     <li>profile</li>
-     <li>Courses</li>
-     <li>Contact</li>
-     </>
+import { Link, NavLink } from "react-router-dom";
+const navItems = (
+  <>
+    <li>
+      <NavLink to="/" activeClassName="active" className="navLink">
+        Home
+      </NavLink>
+    </li>
+    <NavLink className="navLink" activeClassName="active">
+      <li>profile</li>
+    </NavLink>
+    <NavLink className="navLink" activeClassName="active">
+      <li>Courses</li>
+    </NavLink>
+    <NavLink className="navLink" activeClassName="active">
+      <li>Contact</li>
+    </NavLink>
+  </>
+);
 
 // for responsive  menu
 const customStyles = {
@@ -31,20 +43,22 @@ const customStyles = {
 const NavBar = () => {
      const [isOpen, setOpen] = useState(false);
 
-     const handleStateChange = state => {
-       setOpen(state.isOpen);
-     };
+
      return (
        <Container>
-         <div id="nav_main">
+         <nav id="nav_main">
            {/* logo */}
            <div className="site_logo">
-             <img src={logo} alt="logo" />
+             <Link to="/">
+               <img src={logo} alt="site logo" loading="lazy" />
+             </Link>
            </div>
 
            {/* navItems */}
            <div className="nav_items">
-             <ul>{navItems}</ul>
+             <ul>
+               {navItems}
+             </ul>
            </div>
            {/* sing in button */}
            <div className="sign_in_btn">
@@ -56,18 +70,17 @@ const NavBar = () => {
              <Hamburger size={30} toggled={isOpen} toggle={setOpen} />
              <Menu
                isOpen={isOpen}
-               onClick={handleStateChange}
+               onStateChange={({ isOpen }) => setOpen(isOpen)}
                customBurgerIcon={false}
                styles={customStyles}
              >
                {navItems}
-
                <div className="sign_in_btn_mobile">
                  <button type="button">Sign In</button>
                </div>
              </Menu>
            </div>
-         </div>
+         </nav>
        </Container>
      );
 };

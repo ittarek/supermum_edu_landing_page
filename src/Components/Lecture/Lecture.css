@@ -188,5 +188,6 @@
                 width: 530px;
                 top: 15%;
                 left: -10%;
+                object-fit: cover;
            }
 }

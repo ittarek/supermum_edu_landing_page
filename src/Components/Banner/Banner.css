@@ -2,11 +2,13 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     
+
 }
 
 .banner_details {
      width: 450px;
+     text-align: left;
+
 }
 
 .banner_details h1 {
@@ -30,17 +32,14 @@
      height: 62px;
      border-radius: 16px;
      border: none;
-     font-family: Inter,
-          system-ui,
-          Avenir,
-          Helvetica,
-          Arial,
-          sans-serif;
+     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
      font-weight: 600;
      font-size: 18px;
      letter-spacing: -1%;
      line-height: 21.75px;
      color: #FEF4F1;
+     padding: 10px 20px;
+     margin-top: 20px;
 }
 
 .learn_more {
@@ -55,7 +54,19 @@
      color: #2076FF;
 }
 
-/* responsive for mobile device */
+.banner_img {
+
+     margin-right: -40px;
+}
+
+.banner_img img {
+     max-width: 100%;
+     height: auto;
+
+
+}
+
+/* Responsive for mobile */
 @media screen and (max-width: 600px) {
      #banner_container {
           flex-direction: column-reverse;
@@ -67,26 +78,26 @@
      }
 
      .banner_details h1 {
-          font-weight: 700;
           font-size: 30px;
           line-height: 42px;
      }
 
      .banner_details .banner_text {
           font-size: 18px;
-          text-align: center;
      }
 
+     .banner_img {
+
+          margin-right: 40px;
+     }
 
      .banner_img img {
           width: 100%;
      }
-
 }
 
-/* responsive for tablet */
+/* Responsive for tablet */
 @media (min-width: 640px) and (max-width: 1024px) {
-
      #banner_container {
           flex-wrap: wrap;
      }
@@ -96,42 +107,29 @@
           text-align: center;
      }
 
+     .banner_img {
+
+          margin-right: 40px;
+     }
+
      .banner_details h1 {
-          font-weight: 700;
           font-size: 30px;
           line-height: 42px;
      }
-
-     .banner_details .banner_text {
-          font-size: 18px;
-          text-align: center;
-     }
-
-
-     #banner_container img {
-          width: 100%;
-     }
 }
 
-/* responsive for laptop devices */
+/* Responsive for laptop */
 @media (min-width: 1024px) and (max-width: 1440px) {
-
-#banner_container {
+     #banner_container {
           flex-wrap: nowrap;
      }
 
      .banner_details {
           width: 450px;
-          text-align: left
-          ;
-     }
-.banner_details h1{
-     font-size: 44px;
-}
-     .banner_details .banner_text {
-          font-size: 20px;
           text-align: left;
      }
 
-
+     .banner_details h1 {
+          font-size: 44px;
+     }
 }

@@ -2,7 +2,9 @@ import "./Footer.css"
 import footerLogo from "../../../assets/images/logo_and_banner/Logo.png";
 import playStoreImg from "../../../assets/images/logo_and_banner/GooglePlaylogo.png";
 import appStoreImg from "../../../assets/images/logo_and_banner/Applelogo.png";
-import Container from './../../ShareComponetns/Container';
+import Container from "./../../ShareComponents/Container";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -11,10 +13,12 @@ import Container from './../../ShareComponetns/Container';
 const Footer = () => {
   return (
     <Container>
-      <div id="footer_component">
+      <footer id="footer_component">
         {/* footer summery */}
         <div className="footer_summery">
-          <img src={footerLogo} alt="footer image" />
+          <Link to="/">
+            <img src={footerLogo} alt="footer image" loading="lazy" />
+          </Link>
           <p>
             Our motto to fulfill customer demand by making them satisfied with
             growing their business.
@@ -66,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>{" "}
+      </footer>{" "}
       {/* footer bottom */}
       <div className="footer_bottom">
         <p>Copyright Besnik 2021 All rights reserved.</p>

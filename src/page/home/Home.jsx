@@ -9,7 +9,7 @@ import Sponsor from "../../Components/Sponsor/Sponssor";
 const Home = () => {
   return (
   // all home components here . ex: banner, course.
-<div>
+<>
       <Banner />
       <Sponsor/>
       <Platform/>
@@ -17,7 +17,7 @@ const Home = () => {
       <Lecture/>
       <Review/>
       <Pricing/>
-    </div>
+    </>
   );
 };
 

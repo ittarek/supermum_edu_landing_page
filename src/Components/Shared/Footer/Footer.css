@@ -1,7 +1,7 @@
 #footer_component {
      display: flex;
      justify-content: space-between;
-     align-items: top;
+     /* align-items: flex-start; */
 
 }
 
@@ -101,7 +101,7 @@
 @media screen and (max-width: 600px) {
      #footer_component {
           margin: 0;
-          flex-wrap: wrap;
+flex-wrap: wrap;
 
      }
 
